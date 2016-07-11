@@ -1,0 +1,83 @@
+
+{#
+ # Bootstrap card that contains an item in a list of cards.
+ #}
+
+{% macro listCard(item='') %}
+    <div class="card card-bl ck rcard-listitem">
+        {{ item | replace("{{ expert }}", "<div style='float: right;'><span class='tag tag-pill tag-success pull-right'><i class='fa fa-check-square-o'></i> Expert</span></div>") | safe }}
+    </div>
+{% endmacro %}
+
+
+{#
+ # Bootstrap card that contains a check mark before the content and
+ # displays a popover when clicked.
+ #}
+
+{% macro popoverCard(cardContent, popTitle='', popContent) %}
+    <div class="card card-block rcard-popover" role="button"
+        data-toggle="popover" data-trigger="manual" title="{{ popTitle }}"
+        data-content="{{ popContent }}">
+        <ul class="fa-ul">
+            <li>
+                <i class="fa-li fa fa-check-circle green"></i>
+                {{ cardContent | safe }}
+            </li>
+        </ul>
+	<div class="rcard-popover-handle"><i class="fa fa-chevron-down"></i></div>
+    </div>
+{% endmacro %}
+
+
+{#
+ # Collapable section with link heading
+ #}
+{% macro collapseLink(name='', id='') %}
+    <a class="collapse-toggle collapsed r-skills-collapse" data-toggle="collapse"
+        href="#{{ id }}" aria-expanded="false" aria-controls="{{ id }}">
+        <span class="r-collapse-control">{{ name | safe }}</span>
+    </a>
+{% endmacro %}
+
+
+{#
+ # Collapable section with three-column row heading
+ #}
+{% macro collapseExperience(center='', right='', id='') %}
+    <div class="row collapse-toggle collapsed r-exp-collapse"
+        data-toggle="collapse" data-target="#{{ id }}"
+        aria-expanded="false" aria-controls="{{ id }}">
+        <div class="col-xs-1 col-sm-1 col-md-1">
+            <span class="r-collapse-control"></span>
+        </div>
+        <div class="col-xs-11 col-sm-7 col-md-7">
+            {{ center | safe }}
+        </div>
+        <div class="col-xs-1 hidden-sm-up"></div> <!-- workaround because .offset-xs-1 seems to affect all widths if added below -->
+        <div class="col-xs-11 col-sm-4 col-md-4 text-xs-right">
+            {{ right | safe }}
+        </div>
+     </div>
+{% endmacro %}
+
+
+{#
+ # Three column row with icon in left column
+ #}
+{% macro infoRow(icon='', center='', right='') %}
+    <div class="row vertical-center">
+        <div class="col-xs-1">
+            <i class="fa {{ icon }} fa-2x" style="line-height: inherit;"></i>
+        </div>
+        <div class="col-xs-11 col-sm-4 col-md-4">
+            <strong>{{ center | safe }}</strong><br />
+        </div>
+        <div class="col-xs-1 hidden-sm-up"></div> <!-- workaround because .offset-xs-1 seems to affect all widths if added below -->
+        <div class="col-xs-11 col-sm-7 col-md-7">
+            {{ right | safe }}
+        </div>
+    </div>
+{% endmacro %}
+
+

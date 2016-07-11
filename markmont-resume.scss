@@ -1,0 +1,379 @@
+
+$dark-blue:      #0275d8;
+$very-dark-blue: #014c8c;
+$light-yellow:   #fcf8e3;
+$light-green:    #dff0d8;
+$light-blue:     #c1e1ff;
+
+
+@media (min-width: 48em) {
+    html {
+	font-size: 18px;
+}
+}
+
+@media print {
+    html, body { font-size: 12px; }
+    .container { max-width: 100%; }
+    /* Expand all collapse sections for printed version: */
+    .collapse {
+	display: block !important;
+	height: auto !important;
+    }
+    /* Remove large black borders around expert badge: */
+    .tag-pill { border-width: 0px; }
+    /*
+     * Add support for different layouts when printing.  The following are
+     * copied from the bootstrap.css *-sm-* classes with "sm" changed to
+     * "print" in the class names.
+     */
+    .col-print-1 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	width: 8.333333%;
+    }
+    .col-print-2 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 16.666667%;
+      }
+    .col-print-3 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 25%;
+    }
+    .col-print-4 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 33.333333%;
+    }
+    .col-print-5 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 41.666667%;
+    }
+    .col-print-6 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 50%;
+    }
+    .col-print-7 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 58.333333%;
+    }
+    .col-print-8 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 66.666667%;
+    }
+    .col-print-9 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 75%;
+    }
+    .col-print-10 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 83.333333%;
+    }
+    .col-print-11 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 91.666667%;
+    }
+    .col-print-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+    .pull-print-0 { right: auto; }
+    .pull-print-1 { right: 8.333333%; }
+    .pull-print-2 { right: 16.666667%; }
+    .pull-print-3 { right: 25%; }
+    .pull-print-4 { right: 33.333333%; }
+    .pull-print-5 { right: 41.666667%; }
+    .pull-print-6 { right: 50%; }
+    .pull-print-7 { right: 58.333333%; }
+    .pull-print-8 { right: 66.666667%; }
+    .pull-print-9 { right: 75%; }
+    .pull-print-10 { right: 83.333333%; }
+    .pull-print-11 { right: 91.666667%; }
+    .pull-print-12 { right: 100%; }
+    .push-print-0 { left: auto; }
+    .push-print-1 { left: 8.333333%; }
+    .push-print-2 { left: 16.666667%; }
+    .push-print-3 { left: 25%; }
+    .push-print-4 { left: 33.333333%; }
+    .push-print-5 { left: 41.666667%; }
+    .push-print-6 { left: 50%; }
+    .push-print-7 { left: 58.333333%; }
+    .push-print-8 { left: 66.666667%; }
+    .push-print-9 { left: 75%; }
+    .push-print-10 { left: 83.333333%; }
+    .push-print-11 { left: 91.666667%; }
+    .push-print-12 { left: 100%; }
+    .offset-print-0 { margin-left: 0%; }
+    .offset-print-1 { margin-left: 8.333333%; }
+    .offset-print-2 { margin-left: 16.666667%; }
+    .offset-print-3 { margin-left: 25%; }
+    .offset-print-4 { margin-left: 33.333333%; }
+    .offset-print-5 { margin-left: 41.666667%; }
+    .offset-print-6 { margin-left: 50%; }
+    .offset-print-7 { margin-left: 58.333333%; }
+    .offset-print-8 { margin-left: 66.666667%; }
+    .offset-print-9 { margin-left: 75%; }
+    .offset-print-10 { margin-left: 83.333333%; }
+    .offset-print-11 { margin-left: 91.666667%; }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+    margin-top: 1.5rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.667rem;
+    margin-bottom: 1rem;
+}
+
+/* Style to replace the "fa" class and avoid <i></i> markup for Font Awesome
+.some-class::before {
+display: block;
+float: left;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+transform: translate(0, 0);
+margin-right: 0.5em;
+}
+*/
+
+.custom-select {
+    background-color: $light-blue;
+    font-weight: bold;
+}
+
+.rcard-listitem {
+    padding: 0.5rem;
+    background-color: $light-yellow;
+    font-weight: bold;
+}
+
+.rcard-popover {
+    padding-bottom: 0.25rem;
+}
+
+.rcard-popover:hover {
+    background-color: $light-blue;
+}
+
+.rcard-popover > .fa-ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.rcard-popover-handle {
+    text-align: center;
+    color: $dark-blue;
+}
+
+.rcard-popover:hover .rcard-popover-handle {
+    color: $very-dark-blue;
+}
+
+.popover-title {
+    color: #ffffff;
+    background-color: $dark-blue;
+    border-bottom-color: $light-yellow;
+}
+
+.popover, .popover-content {
+    background-color: $light-yellow;
+}
+
+.popover.popover-bottom .popover-arrow::after, .popover.bs-tether-element-attached-top .popover-arrow::after {
+    border-bottom-color: $light-yellow;
+}
+
+/* Add chevron-down before expanded section: */
+.collapse-toggle .r-collapse-control::before {
+    content: "\f078";
+    display: block;
+    float: left;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    line-height: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    margin-right: 0.5em;
+}
+
+/* Add chevron-right before collapsed section: */
+.collapsed .r-collapse-control::before {
+    content: "\f054";
+    display: block;
+    float: left;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    line-height: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    margin-right: 0.5em;
+}
+
+.r-collapse-control {
+    font-size: 1.667rem;
+}
+
+.r-collapse-control:hover {
+    color: $very-dark-blue;
+}
+
+.r-skills-collapse, .r-exp-collapse {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.r-skills-collapse {
+    color: $dark-blue;
+}
+
+.r-skills-collapse:focus {
+    outline: none;
+    text-decoration: none;
+    color: $dark-blue;
+}
+
+.r-exp-collapse .r-collapse-control {
+    color: $dark-blue;
+}
+
+.r-exp-collapse:hover .r-collapse-control {
+    color: $very-dark-blue;
+}
+
+.r-exp-collapse:hover,
+.r-skills-collapse:hover {
+    color: $very-dark-blue;
+    background-color: $light-blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.r-job-title {
+    color: $dark-blue;
+}
+
+.r-exp-collapse:hover .r-job-title {
+    color: $very-dark-blue;
+}
+
+.green { color: #008000; }
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #555555;
+    min-height: 75rem;
+    position: relative;
+}
+
+.alert-with-icon {
+    overflow: hidden;
+}
+
+.alert .alert-icon {
+    width: 3.5rem;
+    float: left;
+}
+
+.alert .alert-content {
+    width: 80%;
+    float: left;
+}
+
+.resume-sidebar {
+    margin-top: 2rem;
+}
+
+.resume-header {
+    margin-bottom: 2rem;
+}
+
+.print-warning {
+    margin-bottom: 2rem;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+ul ul {
+    list-style-type: square;
+}
+
+#scrollspy-padding {
+    padding-bottom: 0px;
+}
+
