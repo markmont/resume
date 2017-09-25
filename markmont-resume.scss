@@ -20,6 +20,8 @@ $light-blue:     #c1e1ff;
 	display: block !important;
 	height: auto !important;
     }
+    /* Display cards in more columns */
+    .card-columns { column-count: 3; }
     /* Remove large black borders around expert badge: */
     .badge-pill { border-width: 0px; }
     /*
@@ -34,124 +36,124 @@ $light-blue:     #c1e1ff;
         padding-right: 15px;
         padding-left: 15px;
     }
-    .col-sm {
+    .col-print {
         -ms-flex-preferred-size: 0;
             flex-basis: 0;
         -ms-flex-positive: 1;
             flex-grow: 1;
         max-width: 100%;
     }
-    .col-sm-auto {
+    .col-print-auto {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
         width: auto;
         max-width: none;
     }
-    .col-sm-1 {
+    .col-print-1 {
         -ms-flex: 0 0 8.333333%;
             flex: 0 0 8.333333%;
         max-width: 8.333333%;
     }
-    .col-sm-2 {
+    .col-print-2 {
             -ms-flex: 0 0 16.666667%;
             flex: 0 0 16.666667%;
         max-width: 16.666667%;
     }
-    .col-sm-3 {
+    .col-print-3 {
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
         max-width: 25%;
     }
-    .col-sm-4 {
+    .col-print-4 {
         -ms-flex: 0 0 33.333333%;
             flex: 0 0 33.333333%;
         max-width: 33.333333%;
     }
-    .col-sm-5 {
+    .col-print-5 {
         -ms-flex: 0 0 41.666667%;
             flex: 0 0 41.666667%;
         max-width: 41.666667%;
     }
-    .col-sm-6 {
+    .col-print-6 {
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
         max-width: 50%;
     }
-    .col-sm-7 {
+    .col-print-7 {
         -ms-flex: 0 0 58.333333%;
             flex: 0 0 58.333333%;
         max-width: 58.333333%;
     }
-    .col-sm-8 {
+    .col-print-8 {
         -ms-flex: 0 0 66.666667%;
             flex: 0 0 66.666667%;
         max-width: 66.666667%;
     }
-    .col-sm-9 {
+    .col-print-9 {
         -ms-flex: 0 0 75%;
             flex: 0 0 75%;
         max-width: 75%;
     }
-    .col-sm-10 {
+    .col-print-10 {
         -ms-flex: 0 0 83.333333%;
             flex: 0 0 83.333333%;
         max-width: 83.333333%;
     }
-    .col-sm-11 {
+    .col-print-11 {
         -ms-flex: 0 0 91.666667%;
             flex: 0 0 91.666667%;
         max-width: 91.666667%;
     }
-    .col-sm-12 {
+    .col-print-12 {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
         max-width: 100%;
     }
-    .order-sm-1 {
+    .order-print-1 {
         -ms-flex-order: 1;
             order: 1;
     }
-    .order-sm-2 {
+    .order-print-2 {
         -ms-flex-order: 2;
             order: 2;
     }
-    .order-sm-3 {
+    .order-print-3 {
         -ms-flex-order: 3;
             order: 3;
     }
-    .order-sm-4 {
+    .order-print-4 {
         -ms-flex-order: 4;
             order: 4;
     }
-    .order-sm-5 {
+    .order-print-5 {
         -ms-flex-order: 5;
             order: 5;
     }
-        .order-sm-6 {
+    .order-print-6 {
         -ms-flex-order: 6;
             order: 6;
     }
-    .order-sm-7 {
+    .order-print-7 {
         -ms-flex-order: 7;
             order: 7;
     }
-    .order-sm-8 {
+    .order-print-8 {
         -ms-flex-order: 8;
             order: 8;
     }
-    .order-sm-9 {
+    .order-print-9 {
         -ms-flex-order: 9;
             order: 9;
     }
-    .order-sm-10 {
+    .order-print-10 {
         -ms-flex-order: 10;
             order: 10;
     }
-    .order-sm-11 {
+    .order-print-11 {
         -ms-flex-order: 11;
             order: 11;
     }
-    .order-sm-12 {
+    .order-print-12 {
         -ms-flex-order: 12;
             order: 12;
     }
