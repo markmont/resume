@@ -5,7 +5,7 @@
 
 {% macro listCard(item='') %}
     <div class="card card-bl ck rcard-listitem">
-        {{ item | replace("{{ expert }}", "<div style='float: right;'><span class='tag tag-pill tag-success pull-right'><i class='fa fa-check-square-o'></i> Expert</span></div>") | safe }}
+        {{ item | replace("{{ expert }}", "<div style='float: right;'><span class='badge badge-pill badge-success pull-right'><i class='fa fa-check-square-o'></i> Expert</span></div>") | safe }}
     </div>
 {% endmacro %}
 
@@ -45,18 +45,19 @@
  # Collapable section with three-column row heading
  #}
 {% macro collapseExperience(center='', right='', id='') %}
-    <div class="row collapse-toggle collapsed r-exp-collapse"
+    <div class="collapse-toggle collapsed r-exp-collapse"
         data-toggle="collapse" data-target="#{{ id }}"
         aria-expanded="false" aria-controls="{{ id }}">
-        <div class="col-xs-1 col-sm-1 col-md-1">
-            <span class="r-collapse-control"></span>
-        </div>
-        <div class="col-xs-11 col-sm-7 col-md-7">
-            {{ center | safe }}
-        </div>
-        <div class="col-xs-1 hidden-sm-up"></div> <!-- workaround because .offset-xs-1 seems to affect all widths if added below -->
-        <div class="col-xs-11 col-sm-4 col-md-4 text-xs-right">
-            {{ right | safe }}
+        <div class="row">
+            <div class="col-1 col-md-1">
+                <span class="r-collapse-control"></span>
+            </div>
+            <div class="col-11 col-md-7">
+                {{ center | safe }}
+            </div>
+            <div class="col-11 col-md-4 ml-auto text-md-right">
+                {{ right | safe }}
+            </div>
         </div>
      </div>
 {% endmacro %}
@@ -67,14 +68,13 @@
  #}
 {% macro infoRow(icon='', center='', right='') %}
     <div class="row vertical-center">
-        <div class="col-xs-1">
+        <div class="col-1">
             <i class="fa {{ icon }} fa-2x" style="line-height: inherit;"></i>
         </div>
-        <div class="col-xs-11 col-sm-4 col-md-4">
+        <div class="col-11 col-md-4">
             <strong>{{ center | safe }}</strong><br />
         </div>
-        <div class="col-xs-1 hidden-sm-up"></div> <!-- workaround because .offset-xs-1 seems to affect all widths if added below -->
-        <div class="col-xs-11 col-sm-7 col-md-7">
+        <div class="col-11 col-md-7 ml-auto">
             {{ right | safe }}
         </div>
     </div>

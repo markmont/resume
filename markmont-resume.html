@@ -24,9 +24,9 @@
 	<div id="overview" class="resume-header">
 	    <div class="container">
 		<div class="row">
-		    <div class="col-sm-12 col-md-8 col-print-12">
+		    <div class="col-12 col-md-8 col-print-12">
 			<h1>Mark Montague's Resume</h1>
-			<div class="alert alert-with-icon alert-warning print-warning visible-print-block" role="alert">
+			<div class="alert alert-with-icon alert-warning print-warning d-print-block" role="alert">
 			    <div class="alert-icon">
 				<i class="fa fa-hand-o-right fa-3x fa-pull-left" aria-hidden="true"></i>
 			    </div>
@@ -36,7 +36,7 @@
 			    </div>
 			</div> <!-- .alert -->
 
-			<form class="form-inline">
+			<form>
 			    <div class="form-group">
 				<label for="role"><strong>Highlight Mark's experience as a </strong></label>
 				<select id="role" class="custom-select">
@@ -56,7 +56,7 @@
 
 	    <div class="row">
 
-		<div class="col-sm-12 col-md-9 col-print-12">
+		<div class="col-12 col-md-9 col-print-12">
 
 		    <div>
 			<h2>Overview</h2>
@@ -959,15 +959,14 @@
 		<div id="education">
 		    <h2>Education</h2>
 		    <div class="row">
-			<div class="col-xs-1 col-sm-1 col-md-1">
+			<div class="col-1 col-sm-1">
 			    <i class="fa fa-university fa-2x" style="line-height: inherit;"></i>
 			</div>
-			<div class="col-xs-11 col-sm-7 col-md-7">
+			<div class="col-11 col-sm-7">
 			    <strong>Computer Engineering, Electrical Engineering</strong><br />
 			    The University of Michigan<br /><br />
 			</div>
-			<div class="col-xs-1 hidden-sm-up"></div> <!-- workaround because .offset-xs-1 seems to affect all widths if added below -->
-			<div class="col-xs-11 col-sm-4 col-md-4 text-xs-right">
+			<div class="col-11 col-sm-4 ml-auto text-md-right">
 			    1988 -&nbsp;1991
 			</div>
 		    </div>
@@ -1059,9 +1058,9 @@ I have helped organize the WordCamp Ann Arbor <a href="https://2014.annarbor.wor
 
 	    </div> <!-- .col -->
 
-	    <div class="col-sm-12 col-md-3 col-print-12 resume-sidebar hidden-print">
+	    <div class="col-12 col-md-3 col-print-12 resume-sidebar d-print-none">
 		<nav id="navbar-toc" role="navigation">
-		<ul class="nav nav-pills nav-stacked">
+		<ul class="nav nav-pills flex-column">
 		    <li class="nav-item"><a class="nav-link active" href="#overview">Overview</a></li>
 		    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
 		    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>

@@ -9,7 +9,7 @@ $light-blue:     #c1e1ff;
 @media (min-width: 48em) {
     html {
 	font-size: 18px;
-}
+    }
 }
 
 @media print {
@@ -21,146 +21,140 @@ $light-blue:     #c1e1ff;
 	height: auto !important;
     }
     /* Remove large black borders around expert badge: */
-    .tag-pill { border-width: 0px; }
+    .badge-pill { border-width: 0px; }
     /*
      * Add support for different layouts when printing.  The following are
      * copied from the bootstrap.css *-sm-* classes with "sm" changed to
      * "print" in the class names.
      */
-    .col-print-1 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-	float: left;
-	width: 8.333333%;
-    }
-    .col-print-2 {
+    .col-print-1, .col-print-2, .col-print-3, .col-print-4, .col-print-5, .col-print-6, .col-print-7, .col-print-8, .col-print-9, .col-print-10, .col-print-11, .col-print-12, .col-print, .col-print-auto {
         position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 16.666667%;
-      }
-    .col-print-3 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 25%;
-    }
-    .col-print-4 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 33.333333%;
-    }
-    .col-print-5 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 41.666667%;
-    }
-    .col-print-6 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 50%;
-    }
-    .col-print-7 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 58.333333%;
-    }
-    .col-print-8 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 66.666667%;
-    }
-    .col-print-9 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 75%;
-    }
-    .col-print-10 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 83.333333%;
-    }
-    .col-print-11 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
-        width: 91.666667%;
-    }
-    .col-print-12 {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        float: left;
         width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
-    .pull-print-0 { right: auto; }
-    .pull-print-1 { right: 8.333333%; }
-    .pull-print-2 { right: 16.666667%; }
-    .pull-print-3 { right: 25%; }
-    .pull-print-4 { right: 33.333333%; }
-    .pull-print-5 { right: 41.666667%; }
-    .pull-print-6 { right: 50%; }
-    .pull-print-7 { right: 58.333333%; }
-    .pull-print-8 { right: 66.666667%; }
-    .pull-print-9 { right: 75%; }
-    .pull-print-10 { right: 83.333333%; }
-    .pull-print-11 { right: 91.666667%; }
-    .pull-print-12 { right: 100%; }
-    .push-print-0 { left: auto; }
-    .push-print-1 { left: 8.333333%; }
-    .push-print-2 { left: 16.666667%; }
-    .push-print-3 { left: 25%; }
-    .push-print-4 { left: 33.333333%; }
-    .push-print-5 { left: 41.666667%; }
-    .push-print-6 { left: 50%; }
-    .push-print-7 { left: 58.333333%; }
-    .push-print-8 { left: 66.666667%; }
-    .push-print-9 { left: 75%; }
-    .push-print-10 { left: 83.333333%; }
-    .push-print-11 { left: 91.666667%; }
-    .push-print-12 { left: 100%; }
-    .offset-print-0 { margin-left: 0%; }
-    .offset-print-1 { margin-left: 8.333333%; }
-    .offset-print-2 { margin-left: 16.666667%; }
-    .offset-print-3 { margin-left: 25%; }
-    .offset-print-4 { margin-left: 33.333333%; }
-    .offset-print-5 { margin-left: 41.666667%; }
-    .offset-print-6 { margin-left: 50%; }
-    .offset-print-7 { margin-left: 58.333333%; }
-    .offset-print-8 { margin-left: 66.666667%; }
-    .offset-print-9 { margin-left: 75%; }
-    .offset-print-10 { margin-left: 83.333333%; }
-    .offset-print-11 { margin-left: 91.666667%; }
+    .col-sm {
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+        max-width: 100%;
+    }
+    .col-sm-auto {
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+    }
+    .col-sm-1 {
+        -ms-flex: 0 0 8.333333%;
+            flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    .col-sm-2 {
+            -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .col-sm-3 {
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+            flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-sm-7 {
+        -ms-flex: 0 0 58.333333%;
+            flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .col-sm-8 {
+        -ms-flex: 0 0 66.666667%;
+            flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .col-sm-9 {
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-sm-10 {
+        -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .col-sm-11 {
+        -ms-flex: 0 0 91.666667%;
+            flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .order-sm-1 {
+        -ms-flex-order: 1;
+            order: 1;
+    }
+    .order-sm-2 {
+        -ms-flex-order: 2;
+            order: 2;
+    }
+    .order-sm-3 {
+        -ms-flex-order: 3;
+            order: 3;
+    }
+    .order-sm-4 {
+        -ms-flex-order: 4;
+            order: 4;
+    }
+    .order-sm-5 {
+        -ms-flex-order: 5;
+            order: 5;
+    }
+        .order-sm-6 {
+        -ms-flex-order: 6;
+            order: 6;
+    }
+    .order-sm-7 {
+        -ms-flex-order: 7;
+            order: 7;
+    }
+    .order-sm-8 {
+        -ms-flex-order: 8;
+            order: 8;
+    }
+    .order-sm-9 {
+        -ms-flex-order: 9;
+            order: 9;
+    }
+    .order-sm-10 {
+        -ms-flex-order: 10;
+            order: 10;
+    }
+    .order-sm-11 {
+        -ms-flex-order: 11;
+            order: 11;
+    }
+    .order-sm-12 {
+        -ms-flex-order: 12;
+            order: 12;
+    }
 }
 
 h1, .h1,
@@ -214,7 +208,7 @@ margin-right: 0.5em;
 }
 
 .rcard-popover {
-    padding-bottom: 0.25rem;
+    padding: 1.25rem 1.25rem 0.25rem 1.24rem;
 }
 
 .rcard-popover:hover {
@@ -235,7 +229,19 @@ margin-right: 0.5em;
     color: $very-dark-blue;
 }
 
-.popover-title {
+.card-columns {
+    @media (min-width: 576px) {
+        column-count: 2;
+    }
+    /* @media (min-width: 768px) {
+        column-count: 2;
+    } */
+    @media (min-width: 992px) {
+        column-count: 3;
+    }
+}
+
+.popover-header {
     color: #ffffff;
     background-color: $dark-blue;
     border-bottom-color: $light-yellow;
@@ -245,9 +251,22 @@ margin-right: 0.5em;
     background-color: $light-yellow;
 }
 
-.popover.popover-bottom .popover-arrow::after, .popover.bs-tether-element-attached-top .popover-arrow::after {
-    border-bottom-color: $light-yellow;
+.popover-header {
+    margin-top: 0;
 }
+
+.popover.bs-popover-top .arrow::after, .popover.bs-popover-auto[x-placement^="top"] .arrow::after {
+    border-top-color: $light-yellow;
+}
+
+.popover.bs-popover-bottom .arrow::after, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: $dark-blue;
+}
+
+.popover.bs-popover-bottom .popover-header::before, .popover.bs-popover-auto[x-placement^="bottom"] .popover-header::before {
+  border-bottom-color: $dark-blue;
+}
+
 
 /* Add chevron-down before expanded section: */
 .collapse-toggle .r-collapse-control::before {
