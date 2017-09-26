@@ -168,7 +168,7 @@
 
 			<p>I have 24 years professional experience in software development and was an early adopter of Agile methodology, including Agile Scrum, in 2003.  I have used Agile Scrum in several major web application development projects. Process improvement and quality assurance (primarily test-based) are two areas in which I am particularly strong.</p>
 
-			<p>I am a co-organizer of the WordPress Ann Arbor meetup group (2014-2016) and WordCamp Ann Arbor conference (2014-2015).  I have given presentations on WordPress security and performance improvement / scaling.</p>
+			<p>I am a co-organizer of the WordPress Ann Arbor meetup group (2014-present) and the WordCamp Ann Arbor conference (2014-2016).  I have given presentations on WordPress security and performance tuning.</p>
 		    </div> <!-- .web -->
 
 		    <h3>Award-winning excellence</h3>
@@ -216,7 +216,7 @@
 
 {{ resume.popoverCard(
     cardContent="DevOps",
-    popTitle="Since before &quot;DevOps&quot; was a term",
+    popTitle="Since before the term &quot;DevOps&quot; was coined",
     popContent="I've practiced non-microservices aspects of DevOps since 2001.  Although they present certain organizational challenges, I excel at using vertically-integrated teams to deliver outstanding services."
 ) }}
 
@@ -234,7 +234,7 @@
 
 {{ resume.popoverCard(
     cardContent="Web infrastructure &amp; development",
-    popTitle="11 years experience",
+    popTitle="12 years experience",
     popContent="I am an expert at customizing web apps &mdash; and developing new ones &mdash; to meet the organization's needs.  I am also very experienced in managing cloud services."
 ) }}
 
@@ -267,11 +267,9 @@
 		    <div class="collapse" id="skills-os">
 			<p>I have extensive systems administration experience under:</p>
 		        <div class="card-columns">
-				{{ resume.listCard("{{ expert }} Linux<ul><li>Fedora 24</li><li>RHEL 5, 6, 7</li><li>Ubuntu</li><li>Linux From Scratch</li></ul>") }}
-			    {{ resume.listCard("MacOS X") }}
-			    {{ resume.listCard("Solaris, SunOS") }}
-			    {{ resume.listCard("HP-UX") }}
-			    {{ resume.listCard("AIX") }}
+				{{ resume.listCard("{{ expert }} Linux<ul><li>Fedora 26</li><li>RHEL 5, 6, 7</li><li>Ubuntu</li><li>Linux From Scratch</li></ul>") }}
+			    {{ resume.listCard("MacOS") }}
+                            {{ resume.listCard("Unix<ul><li>Solaris, SunOS</li><li>HP-UX</li><li>AIX</li></ul>") }}
 			    {{ resume.listCard("Microsoft Windows") }}
 			</div>
 		    </div>
@@ -285,7 +283,7 @@
 			    {{ resume.listCard("{{ expert }} Perl 5") }}
 			    {{ resume.listCard("Perl 6") }}
 			    {{ resume.listCard("{{ expert }} PHP <small>(including writing extensions and fixing PHP interpreter bugs)</small>") }}
-			    {{ resume.listCard("Python") }}
+			    {{ resume.listCard("Python 2 and 3") }}
 			    {{ resume.listCard("JavaScript ES6") }}
 			    {{ resume.listCard("{{ expert }} Bourne shell, bash") }}
 			    {{ resume.listCard("csh / tcsh") }}
@@ -301,7 +299,7 @@
 			<p>Being skilled in many different web technologies allows me to recommend the best solutions and be effective regardless of what technologies are already in place.</p>
 			<div class="card-columns">
 			    {{ resume.listCard("HTML 5") }}
-			    {{ resume.listCard("CSS3, Sass/SCSS") }}
+                            {{ resume.listCard("CSS3 <small>(Sass/SCSS, responsive design)</small>") }}
 			    {{ resume.listCard("JavaScript (ES6)") }}
 			    {{ resume.listCard("XML, XSLT") }}
 			    {{ resume.listCard("TLS / SSL") }}
@@ -310,7 +308,7 @@
 			    {{ resume.listCard("Social media integration <small>(Google, Facebook, GitHub, Twitter APIs)</small>") }}
 			    {{ resume.listCard("{{ expert }} PHP") }}
 			    {{ resume.listCard("Node.js <small>(Express, Bower, Gulp, Grunt, npm)</small>") }}
-			    {{ resume.listCard("Python") }}
+                            {{ resume.listCard("Python <small>(WSGI, Flask)</small>") }}
 			    {{ resume.listCard("{{ expert }} Perl") }}
 			    {{ resume.listCard("{{ expert }} Bootstrap 4") }}
 			    {{ resume.listCard("JQuery") }}
@@ -349,8 +347,9 @@
 			    {{ resume.listCard("pthreads") }}
 			    {{ resume.listCard("CUDA <small>(NVIDIA Tesla GPU accelerators)</small>") }}
 			    {{ resume.listCard("Intel Xeon Phi") }}
-			    {{ resume.listCard("Big data (Hadoop / HDFS)") }}
+                            {{ resume.listCard("Big data <small>(Hadoop / HDFS)</small>") }}
 			    {{ resume.listCard("Globus Toolkit") }}
+                            {{ resume.listCard("Containerization<small>(Docker, Singularity)</small>") }}
 			</div>
 		    </div>
 
@@ -360,7 +359,7 @@
 			<div class="card-columns">
 			    {{ resume.listCard("MATLAB") }}
 			    {{ resume.listCard("R") }}
-			    {{ resume.listCard("Scientific Python <small>(numpy, scipy, biopython, matplotlib)</small>") }}
+			    {{ resume.listCard("Scientific Python <small>(numpy, scipy, bioconda, matplotlib; Anaconda Python)</small>") }}
 			    {{ resume.listCard("NCBI BLAST") }}
 			    {{ resume.listCard("yt") }}
 			    {{ resume.listCard("Lumerical FDTD Solutions") }}
@@ -373,6 +372,7 @@
 			    {{ resume.listCard("C, C++") }}
 			    {{ resume.listCard("Java") }}
 			    {{ resume.listCard("XSEDE") }}
+                            {{ resume.listCard("Machine learning <small>(Tensorflow, scikit-learn)</small>") }}
 			</div>
 		    </div>
 
@@ -405,7 +405,7 @@
 			    {{ resume.listCard("{{ expert }} Kickstart <small>(including fixing pykickstart bugs)</small>") }}
 			    {{ resume.listCard("Revision control <small>(git, Mercurial, SVN, CVS, RCS)</small>") }}
 			    {{ resume.listCard("Radmind, Synctree <small>(configuration management and playbooks)</small>") }}
-			    {{ resume.listCard("Amazon Web Services <small>(EC2, S3, Glacier)</small>") }}
+			    {{ resume.listCard("Amazon Web Services <small>(EC2, S3, Glacier, IAM, VPC)</small>") }}
 			    {{ resume.listCard("Linode API") }}
 			</div>
 		    </div>
@@ -1038,15 +1038,15 @@ I have helped organize the WordCamp Ann Arbor <a href="https://2014.annarbor.wor
 
                     <br />
                     {{ resume.infoRow("fa-phone",
-                        "Home phone / voice mail",
-                        '+1 734 996-3974') }}
+                        "Cell phone / voice mail",
+                        '+1 734 717-2422') }}
 
                     <br />
                     {{ resume.infoRow("fa-envelope",
                         "Mailing address",
-                        'Mark Montague<br />
-                            555 East William #11A<br />
-                            Ann Arbor, MI&nbsp;&nbsp;48104') }}
+                        "Mark Montague<br />
+                            934 Raymond Street<br />
+                            Ann Arbor, MI&nbsp;&nbsp;48103") }}
 
                     <br />
                     {{ resume.infoRow("fa-globe",
