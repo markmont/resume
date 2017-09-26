@@ -101,8 +101,12 @@ $(".rcard-popover").click(function(e) {
 $("#role").change(function() {
     var role = $("#role").val();
     if ($.inArray(role, allRoles) == -1) { return; }
-    $("#resume-link").text(resumeUrl + "?role=" + role);
-    $("#resume-link").attr("href", resumeUrl + "?role=" + role);
+    var url = resumeUrl;
+    if (role != "manager") {
+        url = url + "?role=" + role;
+    }
+    $("#resume-link").text(url);
+    $("#resume-link").attr("href", url);
     var delay = 500;
     $.each(allRoles, function(i, v) {
         var positiveClass = "." + v;
